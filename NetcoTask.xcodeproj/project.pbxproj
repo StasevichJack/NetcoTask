@@ -1,0 +1,639 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04FE2464205E3172003D0002 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FE2463205E3172003D0002 /* AppDelegate.swift */; };
+		04FE2466205E3172003D0002 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FE2465205E3172003D0002 /* MainViewController.swift */; };
+		04FE2469205E3172003D0002 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04FE2467205E3172003D0002 /* Main.storyboard */; };
+		04FE246B205E3172003D0002 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04FE246A205E3172003D0002 /* Assets.xcassets */; };
+		04FE246E205E3172003D0002 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04FE246C205E3172003D0002 /* LaunchScreen.storyboard */; };
+		04FE247C205E393F003D0002 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FE247A205E393F003D0002 /* UserCell.swift */; };
+		04FE247D205E393F003D0002 /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04FE247B205E393F003D0002 /* UserCell.xib */; };
+		04FE2494205E4128003D0002 /* NSObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FE248D205E4128003D0002 /* NSObject+Extensions.swift */; };
+		04FE2495205E4128003D0002 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FE2490205E4128003D0002 /* BaseViewController.swift */; };
+		04FE2496205E4128003D0002 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FE2493205E4128003D0002 /* ApiManager.swift */; };
+		04FE2498205E42B3003D0002 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FE2497205E42B3003D0002 /* NetworkManager.swift */; };
+		04FE249B205EB454003D0002 /* LoadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FE249A205EB454003D0002 /* LoadManager.swift */; };
+		04FE24A0205ED0BA003D0002 /* Storage.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04FE249E205ED0BA003D0002 /* Storage.xcdatamodeld */; };
+		04FE24AC205ED25C003D0002 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FE24AA205ED25C003D0002 /* User+CoreDataClass.swift */; };
+		04FE24AD205ED25C003D0002 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FE24AB205ED25C003D0002 /* User+CoreDataProperties.swift */; };
+		04FE24B0205ED281003D0002 /* StorageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FE24AF205ED281003D0002 /* StorageController.swift */; };
+		04FE24B3205EE3E4003D0002 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FE24B2205EE3E4003D0002 /* Constants.swift */; };
+		04FE24B6205EE52C003D0002 /* UIApplication+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FE24B5205EE52C003D0002 /* UIApplication+Extensions.swift */; };
+		04FE24B9205EE92B003D0002 /* LoadingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FE24B7205EE92B003D0002 /* LoadingCell.swift */; };
+		04FE24BA205EE92B003D0002 /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04FE24B8205EE92B003D0002 /* LoadingCell.xib */; };
+		B2CDAA376F862AF12689DD39 /* Pods_NetcoTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0088991E42E2C9878BC43FAA /* Pods_NetcoTask.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0088991E42E2C9878BC43FAA /* Pods_NetcoTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetcoTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		04FE2460205E3172003D0002 /* NetcoTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetcoTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04FE2463205E3172003D0002 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		04FE2465205E3172003D0002 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		04FE2468205E3172003D0002 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04FE246A205E3172003D0002 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04FE246D205E3172003D0002 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04FE246F205E3172003D0002 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04FE2479205E31EB003D0002 /* NetcoTask-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NetcoTask-Bridging-Header.h"; sourceTree = "<group>"; };
+		04FE247A205E393F003D0002 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		04FE247B205E393F003D0002 /* UserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCell.xib; sourceTree = "<group>"; };
+		04FE248D205E4128003D0002 /* NSObject+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Extensions.swift"; sourceTree = "<group>"; };
+		04FE2490205E4128003D0002 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		04FE2493205E4128003D0002 /* ApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		04FE2497205E42B3003D0002 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		04FE249A205EB454003D0002 /* LoadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadManager.swift; sourceTree = "<group>"; };
+		04FE249F205ED0BA003D0002 /* Storage.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Storage.xcdatamodel; sourceTree = "<group>"; };
+		04FE24AA205ED25C003D0002 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		04FE24AB205ED25C003D0002 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		04FE24AF205ED281003D0002 /* StorageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageController.swift; sourceTree = "<group>"; };
+		04FE24B2205EE3E4003D0002 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		04FE24B5205EE52C003D0002 /* UIApplication+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extensions.swift"; sourceTree = "<group>"; };
+		04FE24B7205EE92B003D0002 /* LoadingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingCell.swift; sourceTree = "<group>"; };
+		04FE24B8205EE92B003D0002 /* LoadingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingCell.xib; sourceTree = "<group>"; };
+		55CF2D828C86F0E61A5F215D /* Pods-NetcoTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetcoTask.release.xcconfig"; path = "Pods/Target Support Files/Pods-NetcoTask/Pods-NetcoTask.release.xcconfig"; sourceTree = "<group>"; };
+		A2A2F1ADCEE0E2440A1FEA58 /* Pods-NetcoTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetcoTask.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NetcoTask/Pods-NetcoTask.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04FE245D205E3172003D0002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2CDAA376F862AF12689DD39 /* Pods_NetcoTask.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04FE2457205E3172003D0002 = {
+			isa = PBXGroup;
+			children = (
+				04FE2462205E3172003D0002 /* NetcoTask */,
+				04FE2461205E3172003D0002 /* Products */,
+				5DC070E588753391991048EF /* Pods */,
+				8DA574A1C51315CF9A53B0D1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		04FE2461205E3172003D0002 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04FE2460205E3172003D0002 /* NetcoTask.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04FE2462205E3172003D0002 /* NetcoTask */ = {
+			isa = PBXGroup;
+			children = (
+				04FE2475205E3183003D0002 /* Application */,
+				04FE24A1205ED0BD003D0002 /* Models */,
+				04FE2478205E31A7003D0002 /* Controllers */,
+				04FE2481205E3961003D0002 /* Library */,
+				04FE2477205E319F003D0002 /* Resources */,
+				04FE2476205E3193003D0002 /* Storyboards */,
+			);
+			path = NetcoTask;
+			sourceTree = "<group>";
+		};
+		04FE2475205E3183003D0002 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				04FE2463205E3172003D0002 /* AppDelegate.swift */,
+				04FE2479205E31EB003D0002 /* NetcoTask-Bridging-Header.h */,
+				04FE246F205E3172003D0002 /* Info.plist */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		04FE2476205E3193003D0002 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				04FE246C205E3172003D0002 /* LaunchScreen.storyboard */,
+				04FE2467205E3172003D0002 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		04FE2477205E319F003D0002 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				04FE246A205E3172003D0002 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		04FE2478205E31A7003D0002 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				04FE249D205EC8EB003D0002 /* MainViewController */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		04FE247E205E3942003D0002 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				04FE247A205E393F003D0002 /* UserCell.swift */,
+				04FE247B205E393F003D0002 /* UserCell.xib */,
+				04FE24B7205EE92B003D0002 /* LoadingCell.swift */,
+				04FE24B8205EE92B003D0002 /* LoadingCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		04FE2481205E3961003D0002 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				04FE248E205E4128003D0002 /* Base classes */,
+				04FE24B4205EE3E7003D0002 /* Constants */,
+				04FE248C205E4128003D0002 /* Extensions */,
+				04FE2491205E4128003D0002 /* Helpers */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		04FE248C205E4128003D0002 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				04FE248D205E4128003D0002 /* NSObject+Extensions.swift */,
+				04FE24B5205EE52C003D0002 /* UIApplication+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		04FE248E205E4128003D0002 /* Base classes */ = {
+			isa = PBXGroup;
+			children = (
+				04FE248F205E4128003D0002 /* BaseViewController */,
+			);
+			path = "Base classes";
+			sourceTree = "<group>";
+		};
+		04FE248F205E4128003D0002 /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				04FE2490205E4128003D0002 /* BaseViewController.swift */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		04FE2491205E4128003D0002 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				04FE2492205E4128003D0002 /* ApiManager */,
+				04FE2499205E42B6003D0002 /* NetworkManager */,
+				04FE249C205EB458003D0002 /* LoadManager */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		04FE2492205E4128003D0002 /* ApiManager */ = {
+			isa = PBXGroup;
+			children = (
+				04FE2493205E4128003D0002 /* ApiManager.swift */,
+			);
+			path = ApiManager;
+			sourceTree = "<group>";
+		};
+		04FE2499205E42B6003D0002 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				04FE2497205E42B3003D0002 /* NetworkManager.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		04FE249C205EB458003D0002 /* LoadManager */ = {
+			isa = PBXGroup;
+			children = (
+				04FE249A205EB454003D0002 /* LoadManager.swift */,
+			);
+			path = LoadManager;
+			sourceTree = "<group>";
+		};
+		04FE249D205EC8EB003D0002 /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				04FE247E205E3942003D0002 /* Cells */,
+				04FE2465205E3172003D0002 /* MainViewController.swift */,
+			);
+			path = MainViewController;
+			sourceTree = "<group>";
+		};
+		04FE24A1205ED0BD003D0002 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				04FE24AE205ED25F003D0002 /* User */,
+				04FE24B1205ED285003D0002 /* Storage */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		04FE24AE205ED25F003D0002 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				04FE24AA205ED25C003D0002 /* User+CoreDataClass.swift */,
+				04FE24AB205ED25C003D0002 /* User+CoreDataProperties.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		04FE24B1205ED285003D0002 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				04FE24AF205ED281003D0002 /* StorageController.swift */,
+				04FE249E205ED0BA003D0002 /* Storage.xcdatamodeld */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		04FE24B4205EE3E7003D0002 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				04FE24B2205EE3E4003D0002 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		5DC070E588753391991048EF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A2A2F1ADCEE0E2440A1FEA58 /* Pods-NetcoTask.debug.xcconfig */,
+				55CF2D828C86F0E61A5F215D /* Pods-NetcoTask.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8DA574A1C51315CF9A53B0D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0088991E42E2C9878BC43FAA /* Pods_NetcoTask.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04FE245F205E3172003D0002 /* NetcoTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04FE2472205E3172003D0002 /* Build configuration list for PBXNativeTarget "NetcoTask" */;
+			buildPhases = (
+				F6815B76DFC547387C67F03C /* [CP] Check Pods Manifest.lock */,
+				04FE245C205E3172003D0002 /* Sources */,
+				04FE245D205E3172003D0002 /* Frameworks */,
+				04FE245E205E3172003D0002 /* Resources */,
+				5055F3BE3793F53AFBCD469F /* [CP] Embed Pods Frameworks */,
+				7B1536315D00ED60BC9659F5 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NetcoTask;
+			productName = NetcoTask;
+			productReference = 04FE2460205E3172003D0002 /* NetcoTask.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04FE2458205E3172003D0002 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Jack;
+				TargetAttributes = {
+					04FE245F205E3172003D0002 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 04FE245B205E3172003D0002 /* Build configuration list for PBXProject "NetcoTask" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04FE2457205E3172003D0002;
+			productRefGroup = 04FE2461205E3172003D0002 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04FE245F205E3172003D0002 /* NetcoTask */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04FE245E205E3172003D0002 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04FE246E205E3172003D0002 /* LaunchScreen.storyboard in Resources */,
+				04FE246B205E3172003D0002 /* Assets.xcassets in Resources */,
+				04FE2469205E3172003D0002 /* Main.storyboard in Resources */,
+				04FE24BA205EE92B003D0002 /* LoadingCell.xib in Resources */,
+				04FE247D205E393F003D0002 /* UserCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5055F3BE3793F53AFBCD469F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NetcoTask/Pods-NetcoTask-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/ReachabilitySwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PKHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReachabilitySwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NetcoTask/Pods-NetcoTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B1536315D00ED60BC9659F5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NetcoTask/Pods-NetcoTask-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6815B76DFC547387C67F03C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NetcoTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04FE245C205E3172003D0002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04FE24B6205EE52C003D0002 /* UIApplication+Extensions.swift in Sources */,
+				04FE2495205E4128003D0002 /* BaseViewController.swift in Sources */,
+				04FE24A0205ED0BA003D0002 /* Storage.xcdatamodeld in Sources */,
+				04FE24AC205ED25C003D0002 /* User+CoreDataClass.swift in Sources */,
+				04FE2466205E3172003D0002 /* MainViewController.swift in Sources */,
+				04FE2464205E3172003D0002 /* AppDelegate.swift in Sources */,
+				04FE24B0205ED281003D0002 /* StorageController.swift in Sources */,
+				04FE2498205E42B3003D0002 /* NetworkManager.swift in Sources */,
+				04FE24B3205EE3E4003D0002 /* Constants.swift in Sources */,
+				04FE24B9205EE92B003D0002 /* LoadingCell.swift in Sources */,
+				04FE247C205E393F003D0002 /* UserCell.swift in Sources */,
+				04FE2496205E4128003D0002 /* ApiManager.swift in Sources */,
+				04FE24AD205ED25C003D0002 /* User+CoreDataProperties.swift in Sources */,
+				04FE2494205E4128003D0002 /* NSObject+Extensions.swift in Sources */,
+				04FE249B205EB454003D0002 /* LoadManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		04FE2467205E3172003D0002 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04FE2468205E3172003D0002 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		04FE246C205E3172003D0002 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04FE246D205E3172003D0002 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04FE2470205E3172003D0002 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		04FE2471205E3172003D0002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04FE2473205E3172003D0002 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2A2F1ADCEE0E2440A1FEA58 /* Pods-NetcoTask.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B53FW57Y9D;
+				INFOPLIST_FILE = NetcoTask/Application/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = St.NetcoTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NetcoTask/Application/NetcoTask-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04FE2474205E3172003D0002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55CF2D828C86F0E61A5F215D /* Pods-NetcoTask.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B53FW57Y9D;
+				INFOPLIST_FILE = NetcoTask/Application/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = St.NetcoTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NetcoTask/Application/NetcoTask-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04FE245B205E3172003D0002 /* Build configuration list for PBXProject "NetcoTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04FE2470205E3172003D0002 /* Debug */,
+				04FE2471205E3172003D0002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04FE2472205E3172003D0002 /* Build configuration list for PBXNativeTarget "NetcoTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04FE2473205E3172003D0002 /* Debug */,
+				04FE2474205E3172003D0002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		04FE249E205ED0BA003D0002 /* Storage.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				04FE249F205ED0BA003D0002 /* Storage.xcdatamodel */,
+			);
+			currentVersion = 04FE249F205ED0BA003D0002 /* Storage.xcdatamodel */;
+			path = Storage.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 04FE2458205E3172003D0002 /* Project object */;
+}

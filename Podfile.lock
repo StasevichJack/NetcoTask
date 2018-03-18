@@ -1,0 +1,36 @@
+PODS:
+  - Alamofire (4.7.0)
+  - PKHUD (4.2.3)
+  - ReachabilitySwift (3)
+  - SDWebImage (4.3.3):
+    - SDWebImage/Core (= 4.3.3)
+  - SDWebImage/Core (4.3.3)
+  - SwiftyJSON (4.0.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.7)
+  - PKHUD (from `https://github.com/pkluz/PKHUD.git`, branch `release/swift4`)
+  - ReachabilitySwift (~> 3.0)
+  - SDWebImage (~> 4.0)
+  - SwiftyJSON
+
+EXTERNAL SOURCES:
+  PKHUD:
+    :branch: release/swift4
+    :git: https://github.com/pkluz/PKHUD.git
+
+CHECKOUT OPTIONS:
+  PKHUD:
+    :commit: 4d8fbf70ae912dd72280cde0a5c1440ada9a7306
+    :git: https://github.com/pkluz/PKHUD.git
+
+SPEC CHECKSUMS:
+  Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
+  PKHUD: 351011b853e6b942e7ee8ad335864cc84c787241
+  ReachabilitySwift: f5b9bb30a0777fac8f09ce8b067e32faeb29bb64
+  SDWebImage: de4d90b5bff3571eae7bd16202b1f43135409fa5
+  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
+
+PODFILE CHECKSUM: 2b06362e5f7a7e65fcfe485d1c23079d81ba6abc
+
+COCOAPODS: 1.3.1
